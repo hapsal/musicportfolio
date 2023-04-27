@@ -22,7 +22,7 @@ const NavBar = () => {
     return (
         <header className='bg-neutral-200 container mx-auto flex lg:items-center justify-between py-8'>
 
-            <button className="lg:hidden flex flex-col justify-center items-center" onClick={handleClick}>
+            <button className="lg:hidden flex flex-col justify-center items-center ml-6" onClick={handleClick}>
                 <span className={`bg-neutral-950 block h-0.5 w-6 transition-all duration-300 rounded-sm ${open ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
                 <span className={`bg-neutral-950 block h-0.5 w-6 transition-all duration-300 rounded-sm my-0.5 ${open ? 'opacity-0' : 'opacity-1'}`}></span>
                 <span className={`bg-neutral-950 block h-0.5 w-6 transition-all duration-300 rounded-sm ${open ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
@@ -43,7 +43,7 @@ const NavBar = () => {
             </div>
 
             <div className='lg:hidden'>
-                <Link href="/" className='text-5xl text-orange-600 font-thin uppercase drop-shadow'>HANNSAL</Link>
+                <Link href="/" className='text-5xl text-orange-600 font-thin uppercase drop-shadow mr-6'>HANNSAL</Link>
             </div>
             
         </header>

@@ -1,11 +1,11 @@
-import react from "react";
+import React from "react";
 import guitarCat from "../../public/images/about/guitar_cat.jpg"
 import Image from "next/image";
 
 const About = () => {
     return (
         <main className="flex justify-center">
-            <div className="flex gap-10">
+            <div className="flex gap-10 lg:flex-row flex-col items-center">
                 <Image src={guitarCat} alt="Cat between two guitars" width={350} height={300} className="rounded-xl drop-shadow-md" />
                 <div className="flex flex-col text-left space-y-4 max-w-md">
                     <p>
