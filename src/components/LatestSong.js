@@ -14,7 +14,7 @@ const LatestSong = () => {
   
     //console.log(latestSong)
     return (
-        <div className="absolute left-1/4 top-24 lg:top-1/4 border-solid bg-orange-500 rounded-md border-2 border-transparent drop-shadow-md p-3 lg:p-2 lg:w-2/5">
+        <div className="absolute left-1/4 top-24 lg:top-1/4 border-solid bg-orange-500 rounded-md border-2 border-transparent drop-shadow-md p-3 lg:p-2 lg:w-2/5 mt-10">
             <div className="md:flex">
                 <img src={latestSong.artwork["150x150"]} alt={latestSong.description} className="rounded-md drop-shadow" />
                 <div className="flex flex-col lg:ml-4 justify-evenly">

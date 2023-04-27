@@ -20,7 +20,7 @@ const Footer = () => {
                 Soundcloud
                 </a>
             </nav>
-            <p className="text-neutral-500 mt-5 text-xs uppercase">&copy; 2023 HANNSALmusic. All rights reserved</p>
+            <p className="text-neutral-500 mt-5 text-xs uppercase">&copy; 2023 | HANNSALmusic |  All rights reserved</p>
         </footer>
     )
 }
