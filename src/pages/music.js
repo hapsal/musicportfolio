@@ -1,12 +1,12 @@
 import react from "react";
 
 
-const Discography = () => {
+const Music = () => {
     return (
         <div>
-            Discography
+            Music
         </div>
     )
 }
 
-export default Discography
+export default Music

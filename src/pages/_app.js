@@ -11,12 +11,12 @@ const inter = Inter({
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className={`${inter.variable} font-sans w-full h-screen bg-zinc-800 justify-between`}>
+    <div className={`${inter.variable} font-sans bg-neutral-200`}>
       <NavBar />
-    <main className={`w-full h-screen bg-zinc-800 justify-between`}>
+    <main className={`bg-neutral-200 container mx-auto`}>
       <Component {...pageProps} />
-      </main>
       <Footer />
+      </main>
     </div>
   )
 }

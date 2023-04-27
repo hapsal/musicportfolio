@@ -2,9 +2,8 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className='w-full bg-zinc-900 flex justify-between py-8'>
-            <p className="text-gray-50 ml-20 uppercase">&copy; 2023</p>
-            <nav className='flex gap-4 text-slate-50 font-medium uppercase mr-20 mt-2'>
+        <footer className='bg-neutral-200 container mx-auto pb-10 pt-10 mt-40 items-center flex flex-col'>
+            <nav className='flex flex-col lg:flex-row gap-4 text-neutral-500 font-medium uppercase'>
                 <a href="/" target={"_blank"}>
                 Instagram
                 </a>
@@ -21,6 +20,7 @@ const Footer = () => {
                 Soundcloud
                 </a>
             </nav>
+            <p className="text-neutral-500 mt-5 text-xs uppercase">&copy; 2023 HANNSALmusic. All rights reserved</p>
         </footer>
     )
 }
