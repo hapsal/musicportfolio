@@ -26,6 +26,9 @@ export default function Home() {
               Nulla a ante neque. Ut suscipit efficitur turpis vitae ultricies. Nulla mollis elit ut dui dapibus posuere. Ut viverra consectetur nisl sodales lobortis.</p>
               <p className="max-w-prose mt-10 pl-5 pr-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie augue sit amet purus feugiat tincidunt. 
               Nulla a ante neque. Ut suscipit efficitur turpis vitae ultricies.</p>
+              <iframe src="https://www.youtube.com/embed/c-j0hEXeJ1A" title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              className="mt-20 aspect-video w-full lg:w-1/2 lg:h-1/2"></iframe>
           </div>
       </motion.div>
   )
