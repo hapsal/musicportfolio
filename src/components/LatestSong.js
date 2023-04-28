@@ -22,7 +22,7 @@ const LatestSong = () => {
                         <p className="text-gray-50">{latestSong.title}</p> 
                     </div>
                     <p className="text-gray-50 font-bold">{latestSong.user.name}</p>   
-                    <a className="text-gray-50 hover:text-sky-400 underline mt-4" href={`https://audius.co/` + latestSong.permalink} target={"_blank"}>Listen here</a>
+                    <a className="text-gray-50 hover:text-sky-400 underline mt-4" href={`https://audius.co/`+latestSong.permalink} target={"_blank"}>Listen here</a>
                 </div>
             </div>
         </div>

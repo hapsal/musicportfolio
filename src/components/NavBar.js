@@ -34,7 +34,7 @@ const NavBar = () => {
                     <CustomLink href="/services" title="Services" />
                 </nav>
                 <div className='hidden lg:block flex items-center justify-center'>
-                    <Link href="/" className='text-5xl text-orange-600 font-thin uppercase drop-shadow'>HANNSAL</Link>
+                    <Link href="/" className='text-6xl text-orange-600 font-thin uppercase drop-shadow'>HANNSAL</Link>
                 </div>
                 <nav className="flex flex-col lg:flex-row ml-10 lg:mr-auto lg:justify-center flex-wrap gap-4 text-slate-50 font-medium uppercase mt-2">
                     <CustomLink href="/music" title="Music" />
