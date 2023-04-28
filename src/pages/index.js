@@ -22,6 +22,8 @@ export default function Home() {
           <Image src={catPicture} alt="cat" className="rounded-xl drop-shadow-md" />
             <p className="max-w-prose mt-10 pl-5 pr-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie augue sit amet purus feugiat tincidunt. 
               Nulla a ante neque. Ut suscipit efficitur turpis vitae ultricies. Nulla mollis elit ut dui dapibus posuere. Ut viverra consectetur nisl sodales lobortis.</p>
+              <p className="max-w-prose mt-10 pl-5 pr-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie augue sit amet purus feugiat tincidunt. 
+              Nulla a ante neque. Ut suscipit efficitur turpis vitae ultricies.</p>
           </div>
       </main>
     </>
