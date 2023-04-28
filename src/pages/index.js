@@ -1,16 +1,18 @@
 import Image from "next/image";
 import homePicture from "../../public/images/home/home.jpg"
 import catPicture from "../../public/images/home/hannsalcat.jpg"
-import Link from "next/link";
-
 import LatestSong from "@/components/LatestSong";
+import { motion } from "framer-motion"
 
 export default function Home() {
 
 
   return (
-    <>
-      <main>
+      <motion.div initial={{opacity: 0}} 
+      animate={{opacity: 1}}
+      transition={{ delay: 0.8, duration: 1 }}
+      className="min-h-screen"
+      >
           <div className="relative">
             <h1 className="absolute lg:text-4xl font-extrabold uppercase text-gray-50 left-1/4 top-1/6 mt-10">Latest song is available now</h1>
             <div className="flex justify-center">
@@ -25,7 +27,6 @@ export default function Home() {
               <p className="max-w-prose mt-10 pl-5 pr-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie augue sit amet purus feugiat tincidunt. 
               Nulla a ante neque. Ut suscipit efficitur turpis vitae ultricies.</p>
           </div>
-      </main>
-    </>
+      </motion.div>
   )
 }

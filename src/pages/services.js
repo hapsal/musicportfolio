@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Services = () => {
     return (
-        <main className="flex flex-col gap-10 lg:gap-28 justify-center items-center mt-10">
+        <main className="flex flex-col gap-10 lg:gap-28 justify-center items-center mt-10 min-h-screen">
             <div className="flex gap-10 lg:flex-row flex-col flex-wrap">
                 <Image src={guitarCat} alt="Cat between two guitars" height={300} className="w-full lg:w-80 rounded-xl drop-shadow-md" />
                 <div className="flex flex-col text-left space-y-4 max-w-md">
