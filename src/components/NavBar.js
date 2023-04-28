@@ -31,7 +31,7 @@ const NavBar = () => {
             <div className={`justify-between w-full block flex-grow lg:flex lg:items-center mt-10 lg:mt-0 ${open ? "block" : "hidden"}`}>
                 <nav className="flex flex-col lg:flex-row ml-10 lg:ml-auto lg:mr-10 lg:justify-center flex-wrap gap-4 text-slate-50 font-medium uppercase mt-2">
                     <CustomLink href="/" title="Home" />
-                    <CustomLink href="/about" title="About" />
+                    <CustomLink href="/services" title="Services" />
                 </nav>
                 <div className='hidden lg:block flex items-center justify-center'>
                     <Link href="/" className='text-5xl text-orange-600 font-thin uppercase drop-shadow'>HANNSAL</Link>
