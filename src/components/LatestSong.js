@@ -24,7 +24,7 @@ const LatestSong = () => {
                         <p className="text-gray-50">{latestSong.title}</p> 
                     </div>
                     <p className="text-gray-50 font-bold">{latestSong.user.name}</p>   
-                    <motion.a className="text-gray-50 hover:text-sky-400 underline mt-4" href={`https://audius.co/`+latestSong.permalink} target={"_blank"}
+                    <motion.a className="text-gray-50 hover:text-sky-400 underline mt-4" href={`https://audius.co`+latestSong.permalink} target={"_blank"}
                     initial={{x: 100}}
                     animate={{x: 0}}
                     >Listen here</motion.a>
