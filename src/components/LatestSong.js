@@ -1,6 +1,8 @@
 import useFetch from "@/components/hooks/useFetch";
 import React from "react";
 
+import { motion } from "framer-motion"
+
 const LatestSong = () => {
     const [data, loading] = useFetch('https://audius-discovery-10.cultur3stake.com/v1/users/rWN7z/tracks?app_name=hannsalmusic');
 
@@ -22,7 +24,10 @@ const LatestSong = () => {
                         <p className="text-gray-50">{latestSong.title}</p> 
                     </div>
                     <p className="text-gray-50 font-bold">{latestSong.user.name}</p>   
-                    <a className="text-gray-50 hover:text-sky-400 underline mt-4" href={`https://audius.co/`+latestSong.permalink} target={"_blank"}>Listen here</a>
+                    <motion.a className="text-gray-50 hover:text-sky-400 underline mt-4" href={`https://audius.co/`+latestSong.permalink} target={"_blank"}
+                    initial={{x: 100}}
+                    animate={{x: 0}}
+                    >Listen here</motion.a>
                 </div>
             </div>
         </div>

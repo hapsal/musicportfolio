@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
+import { motion } from "framer-motion"
 
 const CustomLink = ({href, title}) => {
     const router = useRouter()
 
     return (
-        <Link href={href} className={`block lg:inline-block ${router.asPath === href ? 'text-sky-500' : 'text-stone-800'}`}>
-            <span className='hover:text-sky-400'>{title}</span>
+        <Link href={href} className={`block lg:inline-block ${router.asPath === href ? 'text-sky-800' : 'text-stone-800'}`}>
+            <span className='hover:text-sky-400'><motion.div whileHover={{scale: 1.2, y: -3}}>{title}</motion.div></span>
         </Link>
     )
 }
@@ -20,7 +21,11 @@ const NavBar = () => {
     }
 
     return (
-        <header className='bg-neutral-200 container mx-auto flex lg:items-center justify-between py-8'>
+        <motion.header className='bg-neutral-200 container mx-auto flex lg:items-center justify-between py-8' 
+        initial={{opacity: 0, y: -100}} 
+        animate={{opacity: 1, y: 0}}
+        transition={{ delay: 0.2, type: "spring", stiffness: 120  }}
+        >
 
             <button className="lg:hidden flex flex-col justify-center items-center ml-6" onClick={handleClick}>
                 <span className={`bg-neutral-950 block h-0.5 w-6 transition-all duration-300 rounded-sm ${open ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
@@ -43,10 +48,10 @@ const NavBar = () => {
             </div>
 
             <div className='lg:hidden'>
-                <Link href="/" className='text-5xl text-orange-600 font-thin uppercase drop-shadow mr-6'>HANNSAL</Link>
+                <Link href="/" className='text-3xl text-orange-600 font-thin uppercase drop-shadow mr-6'>HANNSAL</Link>
             </div>
             
-        </header>
+        </motion.header>
     )
 }
 
